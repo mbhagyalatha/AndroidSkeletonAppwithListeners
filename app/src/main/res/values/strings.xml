@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AndroidSkeltonApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="version1">1</string>
+    <string-array name="field_names">
+        <item>First Name</item>
+        <item>Last Name</item>
+        <item>Email</item>
+        <item>Street</item>
+        <item>City</item>
+        <item>State</item>
+        <item>Zip Code</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

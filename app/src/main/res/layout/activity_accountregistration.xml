@@ -1,0 +1,272 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_accountreg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/nav_header_vertical_spacing"
+        android:layout_marginRight="@dimen/nav_header_vertical_spacing"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/sv_accountreg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_accreg_sub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_title_afmandatory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All fields are mandatory."
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_spacing"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_accountreg_firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="First Name"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/et_accountreg_firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edit_text_height"
+                            android:layout_gravity="center_vertical"
+                            android:inputType="textPersonName|textCapWords|textNoSuggestions"
+                            android:paddingLeft="@dimen/edit_text_padding"
+                            android:paddingTop="@dimen/edit_text_padding" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_spacing"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_accountreg_lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/top_spacing"
+                            android:text="Last Name"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/et_accountreg_lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edit_text_height"
+                            android:layout_gravity="center_vertical"
+                            android:inputType="textPersonName|textCapWords|textNoSuggestions"
+                            android:paddingLeft="@dimen/edit_text_padding"
+                            android:paddingTop="@dimen/edit_text_padding" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_accountreg_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/top_spacing"
+                            android:text="Email"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/et_accountreg_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edit_text_height"
+                            android:layout_gravity="center_vertical"
+                            android:inputType="textEmailAddress|textNoSuggestions"
+                            android:paddingLeft="@dimen/edit_text_padding"
+                            android:paddingTop="@dimen/edit_text_padding"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <!--starts from here-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_spacing"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_accountreg_street"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/top_spacing"
+                            android:text="Street"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/et_accountreg_street"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edit_text_height"
+                            android:layout_gravity="center_vertical"
+                            android:inputType="textCapWords|textNoSuggestions"
+                            android:paddingLeft="@dimen/edit_text_padding"
+                            android:paddingTop="@dimen/edit_text_padding"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_spacing"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_accountreg_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/top_spacing"
+                            android:text="City"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/et_accountreg_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edit_text_height"
+                            android:layout_gravity="center_vertical"
+                            android:inputType="textCapWords|textNoSuggestions"
+                            android:paddingLeft="@dimen/edit_text_padding"
+                            android:paddingTop="@dimen/edit_text_padding"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_spacing"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_accountreg_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/top_spacing"
+                            android:text="State"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/et_accreg_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edit_text_height"
+                            android:layout_gravity="center_vertical"
+                            android:inputType="textCapWords|textNoSuggestions"
+                            android:paddingLeft="@dimen/edit_text_padding"
+                            android:paddingTop="@dimen/edit_text_padding"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_spacing"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_accountreg_zipcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/top_spacing"
+                            android:text="Zip Code"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/et_accountreg_zipcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edit_text_height"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="@dimen/edit_text_padding"
+                            android:paddingTop="@dimen/edit_text_padding"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="@dimen/bottom_spacing"
+                        android:layout_marginLeft="@dimen/edit_text_padding"
+                        android:layout_marginRight="@dimen/edit_text_padding"
+                        android:layout_marginTop="@dimen/top_spacing"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_accountreg_cancel"
+                            android:layout_width="@dimen/button_width"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/edit_text_padding"
+                            android:descendantFocusability="blocksDescendants"
+                            android:text="Cancel" />
+
+
+                        <Button
+                            android:id="@+id/btn_accountreg_submit"
+                            android:layout_width="@dimen/button_width"
+                            android:layout_height="@dimen/button_height"
+                            android:layout_alignParentRight="true"
+                            android:descendantFocusability="blocksDescendants"
+                            android:text="Save"></Button>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
